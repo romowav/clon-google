@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #202124;
+    display: block;
+}
+/* Aqui es donde le digo que todos mis links se van a ver con ese color */
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+/* Aqui especifico mi font, tamaño y color de letra */
+main{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: whitesmoke;
+}
+/* Con este div defino el tamaño de mi pagina, para que despues mi div.blank puede crecer */
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Aqui empiezan los estilos de mi header y los elementos hijos del header */
+header{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 60px;
+    padding: 6px;
+}
+/* Dentro del header tengo un div, en el cual tengo mis elementos, asi pude mandar todo a la izquierda y despues acomodarlo del lado izquierdo */
+.menu-elements{
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+}
+.menu-buttons{
+    margin: 0px 7px;
+}
+/* los dos botones de la derecha tienen un circulo el cual se activa cuando pasas por encima */
+.circle {
+    background-color: #202124;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle:hover{
+    background-color: #3d3d3d;
+}
+/* los dos botones de la izquierda, al pasar por encima de ellos, se subrayan */
+.underline:hover{
+    text-decoration: underline whitesmoke;
+}
+/* Aqui empieza el contenido de general */
+
+/* Aqui defino el estilo y tamaño del logo */
+#logo{
+    max-height: 290px;
+    min-height: 92px;
+    display: flex;
+    justify-content: center;
+}
+/* #logo img{
+    margin-top: auto;
+    height: 100%;
+    position: relative;
+} */
+
+/* Aqui defino como voy acomodar el aeria del buscador y los botones */
+#srch-bar-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 20px;
+}
+/* Aqui defino el estilo del buscador, borde, tamaño y distribucion */
+.srch-bar{
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 584px;
+    height: 48px;
+    border: 1px solid #5f6368;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0px 8px 0px 14px;
+    margin-top: 6px;
+}
+.lupa{
+    padding-right: 13px;
+}
+.textarea{
+    flex: 1;
+}
+.textarea textarea{
+    display: flex;
+    flex: 1;
+    margin-right: 4px;
+    resize: none;
+    background: transparent;
+    line-height: 22px;
+    border: none;
+    color: whitesmoke;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+.mic{
+    margin: 0px 10px;
+}
+.camera{
+    margin: 0px 10px;
+}
+/* Aqui acomodo los botones uno alado del otro */
+.g-buttons{
+    display: flex;
+    padding-top: 18px;
+}
+/* Aqui defino el estilo de los botones, como se vana ver */
+.button{
+    height: 36px;
+    margin: 11px 5px;
+    padding: 0px 16px;
+    background-color: #303134;
+    border: 1px solid #303134;
+    color: #e8eaed;
+    border-radius: 3px;
+}
+/* Aqui es donde dan frutos los estilos de mi .container, con el flex-grow hago que tome espacio y se llene la pagina */
+.blank{
+    flex-grow: 1;
+}
+/* Comienza mi footer y le doy un estilo para diferenciarlo de lo demas */
+footer{
+    background-color: #171717;
+    align-self: center;
+    width: 100%;
+}
+/* Acomodo mis enlaces y les doy espacio*/
+footer a{
+    display: block;
+    padding: 15px;
+}
+.underline2:hover{
+    text-decoration: underline #999da2;
+}
+.pais{
+    height: 48px;
+    width: 100%;
+    font-size: 15px;
+    padding: 15px 30px;
+    border-bottom: 1px solid #3c4043;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.info1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.info2{
+    display: flex;
+    flex-wrap: wrap;
+}

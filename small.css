@@ -1,0 +1,10 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+.info1 {
+    display: flex;
+    justify-content: space-evenly;
+}
